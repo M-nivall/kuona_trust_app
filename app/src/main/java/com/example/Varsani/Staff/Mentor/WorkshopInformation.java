@@ -81,7 +81,7 @@ public class WorkshopInformation extends AppCompatActivity {
 
         // Load image (with Picasso or Glide)
         String url = Urls.ROOT_URL_WORKSHOP_IMAGES;
-        Picasso.with(WorkshopInformation.this).load(url + bannerImg )
+        Picasso.get().load(url + bannerImg )
                 .fit()
                 .centerCrop()
                 .into(img_banner );

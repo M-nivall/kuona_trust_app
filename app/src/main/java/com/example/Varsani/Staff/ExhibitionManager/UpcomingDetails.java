@@ -57,7 +57,7 @@ public class UpcomingDetails extends AppCompatActivity {
 
         // Load image (with Picasso or Glide)
         String url = Urls.ROOT_URL_EXHIBITION_IMAGES;
-        Picasso.with(UpcomingDetails.this).load(url + bannerImg )
+        Picasso.get().load(url + bannerImg )
                 .fit()
                 .centerCrop()
                 .into(img_banner );

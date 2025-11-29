@@ -75,7 +75,7 @@ public class ArtworkDetails extends AppCompatActivity {
 
         // Load image (with Picasso or Glide)
         String url = Urls.ROOT_URL_ART_IMAGES;
-        Picasso.with(ArtworkDetails.this).load(url + imgName )
+        Picasso.get().load(url + imgName )
                 .fit()
                 .centerCrop()
                 .into(img_banner );

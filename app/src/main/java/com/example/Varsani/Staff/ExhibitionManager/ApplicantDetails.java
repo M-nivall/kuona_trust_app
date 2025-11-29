@@ -96,7 +96,7 @@ public class ApplicantDetails extends AppCompatActivity {
 
         // Load image (with Picasso or Glide)
         String url = Urls.ROOT_URL_EXHIBITION_ARTS;
-        Picasso.with(ApplicantDetails.this).load(url + imgName )
+        Picasso.get().load(url + imgName )
                 .fit()
                 .centerCrop()
                 .into(img_banner );
@@ -297,7 +297,7 @@ public class ApplicantDetails extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.payment_methods, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnPaymentMethod.setAdapter(adapter);
 
         androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
