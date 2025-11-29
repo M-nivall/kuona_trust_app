@@ -251,6 +251,7 @@
         <activity android:name=".Clients.Profile" />
         <activity
             android:name=".Clients.Login"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
