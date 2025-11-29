@@ -66,7 +66,7 @@ public class Feedback extends AppCompatActivity {
         spinner = findViewById(R.id.select_recipient);
 
 
-        ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.recipient,R.layout.support_simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.recipient,R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
 //        progressBar=findViewById(R.id.progressBar);
