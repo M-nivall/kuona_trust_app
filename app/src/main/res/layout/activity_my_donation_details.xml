@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6"
+    tools:context=".Artists.MyDonationDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Donation Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Donation Details"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/deep_blue"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_donation_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donation ID: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title: "
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_donor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donor: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Artist: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_reference_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reference Code: "
+                    android:textSize="16sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Dispatched to Wallet"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#16A34A"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Fund Allocation Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fund Allocation"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/deep_blue"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Total Amount Received -->
+                <TextView
+                    android:id="@+id/tv_total_fund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount: KES 0"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_company_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Share (20%): KES 0"
+                    android:textSize="16sp"
+                    android:textColor="#4B5563"
+                    android:layout_marginBottom="10dp"/>
+
+                <!-- Emphasized Artist Share -->
+                <TextView
+                    android:id="@+id/tv_artist_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Share (80%): KES 0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#065F46"
+                    android:layout_marginBottom="10dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- Optional: Add to Wallet Button -->
+        <Button
+            android:id="@+id/btn_add_to_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to My Wallet"
+            android:backgroundTint="#059669"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:visibility="visible" />
+    </LinearLayout>
+</ScrollView>

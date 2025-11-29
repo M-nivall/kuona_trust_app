@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="#F9F9F9"
+    tools:context=".Staff.ExhibitionManager.CreateExhibition">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Workshop"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp" />
+
+
+            <!-- Title -->
+            <EditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Workshop Title"
+                android:background="@drawable/edittext_background1"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Description"
+                android:gravity="start|top"
+                android:background="@drawable/edittext_background1"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Start Date -->
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background1"
+                android:drawableStart="@drawable/ic_date"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Type -->
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_spinner"
+                android:entries="@array/workshop_type"
+                android:padding="12dp"
+                android:layout_marginTop="16dp" />
+
+            <!-- Location/Link -->
+            <EditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Link / Venue"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background1"
+                android:clickable="true"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Upload Banner -->
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnUploadBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Banner Image"
+                android:layout_marginTop="16dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Workshop"
+                android:backgroundTint="#1E88E5"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

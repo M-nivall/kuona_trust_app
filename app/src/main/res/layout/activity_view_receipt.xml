@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:scrollbars="none"
+    tools:context=".Staff.Patron.ViewReceipt">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/receipt_background">
+        <ImageView
+            android:id="@+id/btn_printfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:contentDescription="print"
+            android:src="@drawable/ic_print" />
+
+        <!-- Header: Company Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuona Trust Foundation"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: 256-4507, Kenya"
+            android:textColor="#777"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +254 745 650 135 | Email: info@kuonatrust.com"
+            android:textColor="#777"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Company Logo -->
+        <ImageView
+            android:id="@+id/imgCompanyLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kuona_icon"
+            android:contentDescription="Company Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Receipt Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donation Receipt"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txvDonor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor: Joe Abdi"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Receipt Details -->
+        <TextView
+            android:id="@+id/txtArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist Name: John Doe"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/txtProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project: Echoes of war"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/txtPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method: Bank"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/txtPaymentCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Code: KKY6GIDGYT"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Bold Amount Section -->
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount: KES 50,000"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Footer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thank you for your donation!"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For any inquiries, call +254 745 650 135 or email support@kuonatrust.com"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

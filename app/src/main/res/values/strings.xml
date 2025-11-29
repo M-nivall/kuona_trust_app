@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Kuona Trust</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Kuona Trust Foundation</string>
+    <string name="nav_header_subtitle">Kuona Trust Foundation</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="orders">Orders</string>
+    <string name="feedback">Feedback</string>
+    <string name="staff_login">Login</string>
+    <string name="about">
+        Kuona Trust Foundation, established in 1995 in Nairobi, Kenya, is a pivotal institution in East Africa’s cultural and artistic
+        landscape. It was founded to foster creativity, support emerging and established artists, and promote the region’s rich cultural
+        heritage through various art forms, including visual arts, performing arts, and literature. Over the decades, the foundation has
+        been instrumental in shaping the careers of many artists through its mentorship programs, workshops, and exhibitions.This digital
+        platform proposal seeks a comprehensive solution, enabling Kuona Trust to sustainably enhance its operational capacity, artist visibility, and patron engagement.
+    </string>
+
+
+    <string name="help">
+        <b>1.	Help</b>
+
+    </string>
+
+    <string-array name="roles_array">
+        <item>Artist</item>
+        <item>Patron</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>Physical</item>
+        <item>Virtual</item>
+    </string-array>
+
+    <string-array name="workshop_type">
+        <item>Virtual</item>
+        <item>Physical</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>MPESA</item>
+        <item>Bank</item>
+        <item>Card</item>
+        <item>PayPal</item>
+    </string-array>
+
+
+    <string-array name="recipient">
+        <item>Select Recipient</item>
+        <item>Exhibition Manager</item>
+        <item>Finance</item>
+        <item>Mentor</item>
+    </string-array>
+
+
+    <string-array name="products">
+        <item>Select item</item>
+
+        <item>Smoke Hood</item>
+        <item>6 Pot Bain Marie</item>
+        <item>Steel Burner with Double Frier</item>
+        <item>Steel Sink</item>
+        <item>Chacoal-grill-fiber-insulated</item>
+        <item>charcoal oven full stainless barbecue grill</item>
+        <item>Chips warmer with inserts</item>
+        <item>Tea urn commercial  300ltr</item>
+        <item>wood charcoal cooker</item>
+    </string-array>
+    <string name="title_activity_supplier_payments">SupplierPayments</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

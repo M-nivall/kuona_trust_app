@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clients.MyArtWork"
+    android:background="#f8f8f8">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tv_my_artworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Artworks"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- RecyclerView to display artworks -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_my_artworks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_my_artworks"
+        android:layout_above="@+id/fab_upload_artwork"
+        android:padding="8dp" />
+
+    <!-- Floating Action Button for uploading -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_upload_artwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Upload Artwork"
+        android:src="@drawable/ic_upload" />
+
+</RelativeLayout>
