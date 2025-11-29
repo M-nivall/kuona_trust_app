@@ -111,7 +111,7 @@ public class AdapterExhibitions extends RecyclerView.Adapter<RecyclerView.ViewHo
 
             final ExhibitionModal p = items.get(position);
             String url = Urls.ROOT_URL_EXHIBITION_IMAGES;
-            Picasso.with(ctx)
+            Picasso.get()
                     .load(url+p.getBannerImg())
                     .fit()
                     .centerCrop()

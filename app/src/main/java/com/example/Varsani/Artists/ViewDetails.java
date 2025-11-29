@@ -89,7 +89,7 @@ public class ViewDetails extends AppCompatActivity {
 
         // Load image (with Picasso or Glide)
         String url = Urls.ROOT_URL_ART_IMAGES;
-        Picasso.with(ViewDetails.this).load(url + imgUrl )
+        Picasso.get().load(url + imgUrl )
                 .fit()
                 .centerCrop()
                 .into(imgArtwork );

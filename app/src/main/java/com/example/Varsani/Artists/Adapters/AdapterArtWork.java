@@ -109,7 +109,7 @@ public class AdapterArtWork extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
             final ArtworkModel p = items.get(position);
             String url = Urls.ROOT_URL_ART_IMAGES;
-            Picasso.with(ctx)
+            Picasso.get()
                     .load(url+p.getImgUrl())
                     .fit()
                     .centerCrop()

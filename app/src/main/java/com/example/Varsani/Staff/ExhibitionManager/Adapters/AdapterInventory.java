@@ -84,7 +84,7 @@ public class AdapterInventory extends RecyclerView.Adapter<RecyclerView.ViewHold
             final InventoryModel o= items.get(position);
 
             String url = Urls.ROOT_URL_EXHIBITION_ARTS;
-            Picasso.with(ctx)
+            Picasso.get()
                     .load(url+o.getImageName())
                     .fit()
                     .centerCrop()
