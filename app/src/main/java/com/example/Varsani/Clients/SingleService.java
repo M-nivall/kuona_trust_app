@@ -94,7 +94,7 @@ public class SingleService extends AppCompatActivity {
 
 
         String url = Urls.ROOT_URL_IMAGES;
-        Picasso.with(SingleService.this).load(url+imagename )
+        Picasso.get().load(url+imagename )
                 .fit()
                 .centerCrop()
                 .into(imageView );
