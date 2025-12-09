@@ -311,7 +311,6 @@ public class CheckOut extends AppCompatActivity {
             return;
         }
 
-
         StringRequest stringRequest=new StringRequest(Request.Method.POST, Urls.URL_SUBMIT_ORDER,
                 new Response.Listener<String>() {
                     @Override
