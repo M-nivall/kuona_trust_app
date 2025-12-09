@@ -68,8 +68,6 @@ public class Forgotpass extends AppCompatActivity {
             return;
         }
 
-
-
         StringRequest stringRequest=new StringRequest(Request.Method.POST, Urls.URL_RESET,
                 new Response.Listener<String>() {
                     @Override
