@@ -22,7 +22,6 @@ public class SessionHandler {
     // check user type
     private static final String KEY_USER_TYPE = "user_type";
 
-
     private Context mContext;
     private SharedPreferences.Editor mEditor;
     private SharedPreferences mPreferences;
