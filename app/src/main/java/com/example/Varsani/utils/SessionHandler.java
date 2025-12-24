@@ -38,6 +38,7 @@ public class SessionHandler {
      * @param firstname
      * @param username
      */
+
     public void loginUser(String clientID,String firstname,String lastname,String username,String phoneno,
                           String email,String dateCreated,String user_type) {
 
