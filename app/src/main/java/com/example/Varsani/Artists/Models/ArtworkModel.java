@@ -9,7 +9,6 @@ public class ArtworkModel {
     private String fullName;
     private String username;
 
-
     public ArtworkModel(String artID, String artistID, String title, String desc, String imgUrl, String fullName, String username) {
         this.artID = artID;
         this.artistID = artistID;
