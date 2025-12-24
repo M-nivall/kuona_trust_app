@@ -12,7 +12,6 @@ public class ExhibitionModal {
     private String bannerImg;
     private String visibility;
 
-
     public ExhibitionModal(String exhibitionID, String title, String exhibitionDesc, String startingDate,
                            String endDate,String venue, String exhibitionType, String bannerImg, String visibility) {
         this.exhibitionID = exhibitionID;
