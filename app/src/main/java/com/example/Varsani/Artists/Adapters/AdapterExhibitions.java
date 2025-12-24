@@ -229,6 +229,7 @@ public class AdapterExhibitions extends RecyclerView.Adapter<RecyclerView.ViewHo
     public interface OnMoreButtonClickListener {
         void onItemClick(View view, ExhibitionModal obj, MenuItem item);
     }
+
     public Filter getFilter() {
 
         return new Filter() {
