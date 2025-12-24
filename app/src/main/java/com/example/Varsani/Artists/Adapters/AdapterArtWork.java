@@ -52,8 +52,6 @@ public class AdapterArtWork extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private AdapterArtWork.OnItemClickListener mOnItemClickListener;
     private AdapterArtWork.OnMoreButtonClickListener onMoreButtonClickListener;
 
-    //
-
     private SessionHandler session;
     private UserModel user;
     private String clientId = "";
