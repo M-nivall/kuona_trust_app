@@ -53,8 +53,6 @@ public class AdapterExhibitions extends RecyclerView.Adapter<RecyclerView.ViewHo
     private AdapterExhibitions.OnItemClickListener mOnItemClickListener;
     private AdapterExhibitions.OnMoreButtonClickListener onMoreButtonClickListener;
 
-    //
-
     private SessionHandler session;
     private UserModel user;
     private String clientId = "";
