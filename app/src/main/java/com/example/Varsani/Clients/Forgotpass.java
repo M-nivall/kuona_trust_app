@@ -47,8 +47,6 @@ public class Forgotpass extends AppCompatActivity {
                 reset();
             }
         });
-
-
     }
 
     public void reset(){
