@@ -11,7 +11,6 @@ public class UpcomingWorkshopModel {
     private String bannerImg;
     private String workshopStatus;
 
-
     public UpcomingWorkshopModel(String workshopID, String mentor, String title, String workshopDesc, String workshopDate,
                          String venue, String workshopType, String bannerImg, String workshopStatus) {
         this.workshopID = workshopID;
