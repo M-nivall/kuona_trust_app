@@ -25,8 +25,6 @@ public class AdapterUpcomingWorkshops extends RecyclerView.Adapter<RecyclerView.
     private List<UpcomingWorkshopModel> items;
     private Context ctx;
     ProgressDialog progressDialog;
-//    private OnItemClickListener mOnItemClickListener;
-//    private OnMoreButtonClickListener onMoreButtonClickListener;
 
     private SessionHandler session;
     private UserModel user;
