@@ -23,7 +23,6 @@ public class UpcomingWorkshopModel {
         this.bannerImg = bannerImg;
         this.workshopStatus = workshopStatus;
     }
-
     public String getWorkshopID() {
         return workshopID;
     }
