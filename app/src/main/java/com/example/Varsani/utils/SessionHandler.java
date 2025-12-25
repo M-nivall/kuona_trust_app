@@ -34,7 +34,6 @@ public class SessionHandler {
 
     /**
      * Logs in the user by saving user details and setting session
-     *
      * @param firstname
      * @param username
      */
